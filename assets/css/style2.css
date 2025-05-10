@@ -1,0 +1,312 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sobre--nos{
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.sobre--nos h1 {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre--nos h2 {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre--nos p {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.692);
+}
+.sobre--nos p b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+    color: black;
+}
+
+/* seção de conteudo */
+/* seção de conteudo */
+/* seção de conteudo */
+
+.barra-conteudo {
+    border: 1px solid rgba(128, 128, 128, 0.671);
+    margin: 20px 20px;
+}
+.conteudo h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2px;
+    margin-top: 50px;
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.conteudo-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo-2 img{
+    width: 1200px;
+    height: 600px;
+    margin-bottom: 50px;
+}
+.conteudo-2--texto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -20px;
+    margin-bottom: 100px;
+}
+.conteudo--barra {
+    border: 0.5px solid rgb(255, 230, 0);
+    width: 90px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.conteudo-escrito1 {
+    grid-column: 1 / 2;
+    margin-left: 90px;
+}
+.conteudo-escrito1 h1 {
+    font-size: 30px;
+}
+.conteudo--texto {
+    font-size: 18px;
+    color: rgb(65, 62, 62);
+}
+.conteudo-escrito2 {
+    grid-column: 2 / 3;
+    margin-left: 70px;
+}
+.conteudo-escrito2 h1 {
+    font-size: 30px;
+}
+.conteudo-escrito3 {
+    grid-column: 3 / 4;
+    margin-left: 70px;
+}
+.conteudo-escrito3 h1 {
+    font-size: 30px;
+}
+
+/* Curso page */
+/* Curso page */
+/* Curso page */
+.curso-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.curso-conteudo--1 {
+    grid-column: 1/2 ;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.curso-conteudo--1 h1 {
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+.curso-conteudo--cemtc p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.719);
+}
+.curso-conteudo--cemtc h2 {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.curso-botao {
+    font-size: 20px;
+    border: 2px solid rgb(255, 230, 0);
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
+    margin-left: 50px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.curso-botao a{
+    text-decoration: none;
+    color: black;
+}
+.curso-conteudo2 {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.curso-conteudo2 img {
+    width: 600px;
+    height: 600px;
+    margin-top: 140px;
+    border-radius: 20px;
+    box-shadow: 9px 9px 2px rgb(161, 160, 160);
+}
+
+.curso-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.curso-conteudo--2 {
+    grid-column: 2/3 ;
+    grid-row: inherit;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+.curso-conteudo--2 h1 {
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+.curso-conteudo--cemtc2 p {
+    font-size: 18px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.719);
+    margin-bottom: 40px;
+}
+.curso-conteudo--cemtc2 h2 {
+    margin-left: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.curso-conteudo3 {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: -550px;
+}
+.curso-conteudo3 img {
+    width: 500px;
+    height: 500px;
+}
+/* Carrossel contetudo */
+.titulo-carrossel h1 {
+    font-size: 50px;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do container do carrossel */
+.carrossel-container {
+    max-width: 40%; /* Tamanho reduzido do carrossel */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden ;
+    border-radius: 10px; /* Bordas arredondadas ao container */
+}
+
+/* Definindo o carrossel em si (linha de imagens) */
+.carrossel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cada imagem dentro do carrossel */
+.carrossel-item {
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column; /* Usando flex para empilhar a imagem e o título */
+    align-items: center; /* Centralizando o conteúdo */
+    justify-content: flex-start; /* Garantir que os itens fiquem alinhados no topo */
+    position: relative;
+}
+
+/* Estilo das imagens - Diminuindo o tamanho */
+.carrossel-item img {
+    width: 100%; /* Deixa as imagens adaptáveis ao tamanho do container */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+}
+.carrossel-item h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 17px;
+}
+/* Título das imagens - Reduzindo o tamanho do texto */
+.carrossel-item-titulo {
+    position: absolute;
+    bottom: 10px; /* Título mais próximo da imagem */
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 12px; /* Diminuir padding para deixar o título menor */
+    font-size: 16px; /* Tamanho da fonte reduzido */
+    border-radius: 5px;
+}
+
+/* Estilo das setas de navegação */
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px; /* Diminuir o tamanho das setas */
+    color: white;
+    background: rgba(2, 145, 133, 0.644);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.seta-prev {
+    left: 10px;
+}
+
+.seta-next {
+    right: 10px;
+}
+
+/* Quando passar o mouse sobre as setas, elas ficam mais evidentes */
+.seta:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* conteudo anuncio */
+.conteudo-anuncios h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.conteudo-anuncios {
+    margin-bottom: 100px;
+}
+.conteudo-anuncio0 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.conteudo-anuncio1 {
+    grid-template-columns: 1/2;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.conteudo-anuncio2 {
+    grid-template-columns: 2/3;
+    
+}

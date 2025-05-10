@@ -1,0 +1,282 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabecalho {
+    padding: 40px;
+    background-image: url(../image/meditação.jpg);
+    background-size: cover;
+    background-position: right;
+}
+.cabecalho p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 40px;
+    padding: 20px;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px #000;
+}
+.cabecalho-navegar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -40px;
+    margin-top: -30px;
+}
+.cabecalho img {
+    width: 180px;
+    height: auto;
+    margin-top: -20px;
+    margin-left: 70px;
+}
+.cabecalho-navegar a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    padding: 20px;
+    margin-top: -40px;
+}
+.cabecalho-navegar a:hover {
+    color: #4e7541;
+    font-size: 21px;
+    transition: all 0.3s ease;
+}
+.icones-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    gap: 40px;
+    margin-top: -70px;
+    margin-right: 90px;
+}
+.icons {
+    color: black;
+    font-size: 26px;
+    width: 20px;
+}
+.icons:hover {
+    color: #4e7541;
+    font-size: 36px;
+    transition: all 0.3s ease;
+}
+.icons-2:hover {
+    color: #4e7541;
+    font-size: 36px;
+    transition: all 0.3s ease;
+}
+.icons-2 {
+    color: black;
+    font-size: 26px;
+    width: 20px;
+}
+.cabecalho--botao {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    border: 2px solid #ffd315;
+    border-radius: 6px;
+    background-color: #ffd315;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    margin-left: 44%;
+    margin-top: 120px;
+}
+
+/* rodape */
+
+
+.rodape {
+    background-image: url(../image/rodape.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 16px;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.rodape-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.rodape-contato p {
+    margin: 5px 0;
+}
+
+.rodape-redes a {
+    color: #fff;
+    font-size: 26px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.rodape-redes a:hover {
+    color: #ffd315;
+}
+
+
+/* Palestras */
+.palestra-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+.palestra-container {
+    max-width: 800px;
+    width: 100%;
+    margin-left: 260px;
+    margin-right: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.palestra-conteudo--texto {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+.palestra-container--titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.palestra-conteudo--texto ul {
+    padding-left: 20px;
+}
+.palestra-conteudo--texto li {
+    margin-bottom: 10px;
+}
+.barra-conteudo {
+    border: 1px solid rgba(128, 128, 128, 0.671);
+    margin: 20px 20px;
+}
+
+/* congresso */
+
+.congresso h1 {
+    margin: 90px 90px;
+    font-size: 47px;
+}
+.conteudo-congresso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px;
+    margin-bottom: 50px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center; 
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 200px;
+}
+
+.video-grid iframe {
+    width: 380px; 
+    height: 190px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* publicação */
+
+.publicacoes {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.publicacoes h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.publicacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.publicacao-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publicacao-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.publicacao-item img {
+    width: 100%;
+    height: 80%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.publicacao-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.publicacao-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+

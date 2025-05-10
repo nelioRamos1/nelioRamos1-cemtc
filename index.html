@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Pagina inicial</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./assets/image/Login.png" alt="Logo cemtcomp">
+        <nav class="cabecalho-navegar">
+            <a href="index.html">Home</a>
+            <a href="html/about.html">Sobre Nós</a>
+            <a href="html/cursos.html">Cursos</a>
+            <a href="html/eventos.html">Eventos</a>
+            <a href="html/publicacao.html">Publicações</a>
+        </nav> <!-- Navegador -->
+        <div class="icones-container">
+            <a href="" class="icons"><i class="bi bi-instagram"></i></a>
+            <a href="" class="icons-2"><i class="bi bi-facebook"></i></a>
+        </div>
+        <p><b>Seja uma pessoa mais saudável, tranquila e assertiva em <br> suas escolhas e atividades</b></p>
+        <a href="#Contato1" class="cabecalho--botao">Fale Conosco</a>
+    </header>   <!-- cabecalho -->
+    <section class="sobre-nos">
+        <div class="sobre-nos--texto">
+            <h1>Sobre Nós</h1>
+        <h2><b>O centro De Estudos em Medicina e Terapias Complementares (CEMTC)</b></h2>
+            <p>foi fundado em 2019. É uma entidade civil sem fins lucrativos, com sede e foro na cidade do Rio de Janeiro,
+                 declarada de utilidade pública pela lei nº 1504 de 03/11/1967, e tem como objetivos:  fomentar estudos em temas ligados à área de saúde e bem-estar,
+                  promovendo e colaborando em palestras, cursos livres,
+                 reuniões científicas e outros eventos da área de Medicina e Saúde Integrativa e Complementar.</p>
+                 <a href="html/about.html" class="cabecalho--botao-aboutUs">Saiba mais</a>
+        </div>
+        <div class="sobre-nos--foto">
+            <img src="./assets/image/Img-aboutus.png" alt="Imagem dupla">
+        </div>
+    </section>
+    <section class="nossas_atividades">
+        <h3 class="quebra">Nossas atividades</h3>
+        <div class="atividades">
+            <div class="atividade-foto" id="foto1">Grupos de estudo e pratica Complementares</div>
+            <div class="atividade-foto" id="foto2">palestras e curso sobre ciência e saude</div>
+            <div class="atividade-foto" id="foto3">congressos, simpósios, workshops..</div>
+            <div class="atividade-foto" id="foto4">retiros e fins de semana terapêuticos</div>
+        </div>
+    </section>
+    <section class="contato" id="Contato1">
+        <h3 class="quebra">Contato</h3>
+        <div class="contato-container">
+            <form action="#" method="post" class="form-contato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>        
+    </section>  
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-logo">
+                <img src="./assets/image/Login.png" alt="Logo CEMTC">
+            </div>
+            <div class="rodape-contato">
+                <p><i class="bi bi-geo-alt-fill"></i> Boulevard 28 de setembro, 112 sala 204 - vila Isabel</p>
+                <p><i class="bi bi-envelope-fill"></i> cemtcomp@gmail.com</p>
+                <p><i class="bi bi-telephone-fill"></i> (21) 999031641</p>
+            </div>
+            <div class="rodape-redes">
+                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
