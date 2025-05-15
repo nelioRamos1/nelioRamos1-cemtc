@@ -1,0 +1,43 @@
+<?php
+session_start();
+
+// Verifica se o usuário está logado
+if (!isset($_SESSION['usuario_id'])) {
+    header('Location: login.php'); // Redireciona para a página de login se não estiver logado
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha uma opção</title>
+    <link rel="stylesheet" href="./assets/css/styleback.css"> <!-- Conectando o arquivo CSS -->
+</head>
+<body>
+
+    <h1>Escolha uma das opções abaixo:</h1>
+
+    <!-- Opções de escolha -->
+    <div class="opcoes">
+        <div class="opcao" onclick="mostrarImagem('opcao1')">
+            <h3>Opção 1</h3>
+            <img src="imagens/opcao1-thumb.jpg" alt="Opção 1">
+        </div>
+        <div class="opcao" onclick="mostrarImagem('opcao2')">
+            <h3>Opção 2</h3>
+            <img src="imagens/opcao2-thumb.jpg" alt="Opção 2">
+        </div>
+    </div>
+
+    <!-- Imagens que serão mostradas -->
+    <div id="opcao1" class="image-container" style="display: none;">
+        <img src="imagens/opcao1.jpg" alt="Imagem da Opção 1">
+    </div>
+    <div id="opcao2" class="image-container" style="display: none;">
+        <img src="imagens/opcao2.jpg" alt="Imagem da Opção 2">
+    </div>
+    <script src="./js/javaback.js"></script> <!-- Conectando o arquivo JS -->
+</body>
+</html>

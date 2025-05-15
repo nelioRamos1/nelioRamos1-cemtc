@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pagamento via PIX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    select {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    img {
+      display: block;
+      margin: 2rem auto;
+      width: 300px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+
+    #pixInfo {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    #boletoLink {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pagamento via PIX</h1>
+  <p>Selecione o plano desejado:</p>
+
+  <select id="plano" onchange="mostrarQRCode()">
+    <option value="">-- Escolha um plano --</option>
+    <option value="mensal">Mensal - R$10</option>
+    <option value="anual">Anual - R$100</option>
+  </select>
+
+  <div id="qrCodeContainer" style="display: none;">
+    <img id="qrCodeImg" src="" alt="QR Code PIX" />
+    <div id="pixInfo"></div>
+  </div>
+
+  <div id="boletoLink" style="display: none;">
+    <h2>Enviar Boleto de Pagamento:</h2>
+    <a href="mailto:seunome@dominio.com?subject=Envio de Boleto&body=Olá, segue o boleto de pagamento." target="_blank">
+      Clique aqui para enviar o comprovante
+    </a>
+  </div>
+
+  <script>
+    function mostrarQRCode() {
+      const plano = document.getElementById('plano').value;
+      const qrImg = document.getElementById('qrCodeImg');
+      const qrContainer = document.getElementById('qrCodeContainer');
+      const info = document.getElementById('pixInfo');
+      const boletoLink = document.getElementById('boletoLink');
+
+      if (plano === "mensal") {
+        qrImg.src = "../meu-projeto/public/pix-landing.png";  // Altere o caminho conforme necessário
+        info.textContent = "Plano Mensal - R$10";
+        qrContainer.style.display = "block";
+        boletoLink.style.display = "block";
+      } else if (plano === "anual") {
+        qrImg.src = "../meu-projeto/public/pix-landing.png";  // Altere o caminho conforme necessário
+        info.textContent = "Plano Anual - R$100";
+        qrContainer.style.display = "block";
+        boletoLink.style.display = "block";
+      } else {
+        qrContainer.style.display = "none";
+        boletoLink.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

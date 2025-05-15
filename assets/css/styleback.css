@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.opcao {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.opcao:hover {
+    transform: scale(1.1);
+}
+
+.opcao img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-container {
+    display: none; /* As imagens começam ocultas */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+}

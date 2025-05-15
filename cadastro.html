@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/stylelogin.css">
+    <title>cadastro</title>
+</head>
+<body>
+<form action="backend/cadastrar.php" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" id="senha" required>
+
+    <label for="celular">Número de Celular:</label>
+    <input type="text" name="celular" id="celular" required pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(XX) XXXXX-XXXX">
+
+    <!-- Exibir mensagem de erro aqui -->
+    <p id="mensagem-erro" style="color: red; display: none;">Este email já está em uso</p>
+
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('erro') === 'email') {
+        document.getElementById('mensagem-erro').style.display = 'block';
+    }
+    </script>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+
+</body>
+</html>
